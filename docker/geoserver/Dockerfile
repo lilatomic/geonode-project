@@ -18,8 +18,6 @@ RUN cd /usr/local/tomcat/webapps \
 
 VOLUME $GEOSERVER_DATA_DIR
 
-# added by simonelanucara https://github.com/simonelanucara
-# Optionally add JAI, ImageIO and Marlin Render for improved Geoserver performance
 WORKDIR /tmp
 
 RUN wget --no-check-certificate https://repo1.maven.org/maven2/org/postgis/postgis-jdbc/1.3.3/postgis-jdbc-1.3.3.jar -O postgis-jdbc-1.3.3.jar && \
